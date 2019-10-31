@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet"
+        href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="landing-wrap">
+        
+        <nav class="navbar fixed-top navbar-dark navbar-expand-md">
+            <a class="navbar-brand pt-0 mr-5"
+                href="#">webAcademy</a>
+            <button class="navbar-toggler d-lg-none"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link"
+                            href="#">курси <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="#">про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="#">контакти</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="nav-link"
+                        href="tel:0678745231">067 874 52 31</a>
+                    <button class="btn btn-primary my-2 my-md-0 bg-primary"
+                        type="submit">записатись</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="banner-image">
+            <div class="banner-text">
+                <h1>I am John Doe</h1>
+                <button type="button"
+                    class="btn btn-outline-success">детальніше</button>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row landing-cols">
+                <div class="col-md d-flex landing-col">
+                    <i class="fas fa-users text-success"></i>
+                    <div class="landing-col-body">
+                        <h6 class="landing-col-title text-success">Title</h6>
+                        <p class="landing-col-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum expedita dignissimos
+                            sequi saepe alias placeat et, itaque perspiciatis sint explicabo voluptates quasi aperiam quisquam eaque rerum sunt
+                            fuga accusantium veniam?</p>
+                    </div>
+                </div>
+                <div class="col-md">yh</div>
+                <div class="col-md">ju</div>
+            </div>
+        </div> 
+        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 column-left">sjkdhf</div>
+            <div class="col column-right">dfgd</div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</body>
+
+</html>
